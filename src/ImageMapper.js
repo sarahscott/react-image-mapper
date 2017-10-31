@@ -108,28 +108,3 @@ ImageMapper.defaultProps = {
 	},
 	strokeColor: 'rgba(0, 0, 0, 0.5)',
 };
-
-ImageMapper.propTypes = {
-	active: PropTypes.bool,
-	fillColor: PropTypes.string,
-	height: PropTypes.number,
-	lineWidth: PropTypes.number,
-	map: PropTypes.shape({
-		areas: PropTypes.arrayOf(PropTypes.shape({
-			area: PropTypes.shape({
-				coords: PropTypes.arrayOf(PropTypes.number),
-				href: PropTypes.string,
-				shape: PropTypes.string,
-			})
-		})),
-		name: PropTypes.string,
-	}),
-	onClick: PropTypes.func,
-	onImageClick: PropTypes.func,
-	onLoad: PropTypes.func,
-	onMouseEnter: PropTypes.func,
-	onMouseLeave: PropTypes.func,
-	src: PropTypes.string.isRequired,
-	strokeColor: PropTypes.string,
-	width: PropTypes.number,
-};
